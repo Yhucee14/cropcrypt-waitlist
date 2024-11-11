@@ -1,9 +1,14 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
