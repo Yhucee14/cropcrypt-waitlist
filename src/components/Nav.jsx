@@ -12,7 +12,7 @@ const Nav = () => {
 
   const location = useLocation();
   const isActive = (path) =>
-    location.pathname === path ? "text-green-500" : "text-black";
+    location.pathname === path ? "text-green-600" : "text-[#736D6D]";
 
   useEffect(() => {
     const handleResize = () => {
@@ -34,7 +34,7 @@ const Nav = () => {
           <div className=" flex flex-row ">
             <Link to="/" className="flex ">
               <img src={logo} alt="logo" className="w-full h-12" />
-              <div className="px-2 font-bold text-xl text-black flex justify-center items-center">
+              <div className="px-2 font-bold text-xl bg-gradient-to-r from-black to-[#359A35] text-transparent bg-clip-text flex justify-center items-center">
                 Cropcrypt
               </div>
             </Link>
@@ -50,42 +50,40 @@ const Nav = () => {
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
             <div className="absolute top-20 left-0 w-full rounded-lg bg-white shadow-lg md:hidden z-10">
-              <Link
-                to="/"
-                className={`block hover:bg-[#72B8724D] px-4 py-2 ${isActive(
-                  "/"
-                )}`}
-                onClick={toggleMobileMenu}
-              >
-                Home
-              </Link>
-              <Link
-                to="/invest"
-                className={`block hover:bg-[#72B8724D] px-4 py-2 ${isActive(
-                  "/invest"
-                )}`}
-                onClick={toggleMobileMenu}
-              >
-                Invest
-              </Link>
-              <Link
-                to="/createAsset"
-                className={`block hover:bg-[#72B8724D] px-4 py-2 ${isActive(
-                  "/createAsset"
-                )}`}
-                onClick={toggleMobileMenu}
-              >
-                Create Assets
-              </Link>
-              <Link
-                to="/profile"
-                className={`block hover:bg-[#72B8724D] px-4 py-2 ${isActive(
-                  "/profile"
-                )}`}
-                onClick={toggleMobileMenu}
-              >
-                Profile
-              </Link>
+              <div className="py-2">
+                <Link
+                  to="/"
+                  className={`flex border-b-gray-300 border-b-2 px-5 md:px-2 py-3 font-medium lg:px-2 ${isActive(
+                    "/"
+                  )}`}
+                >
+                  <div className="flex justify-center items-center">
+                    <img src={home} alt="home" className="w-5 h-5" />
+                  </div>
+                  <div className="px-2  flex justify-center items-center">
+                    Home
+                  </div>
+                </Link>
+                <Link
+                  to="/community"
+                  className={`flex px-5 border-b-gray-300 border-b-2 py-3 md:px-2 font-medium lg:px-2 ${isActive(
+                    "/"
+                  )}`}
+                >
+                  <div className="flex justify-center items-center">
+                    <img src={people} alt="home" className="w-5 h-5" />
+                  </div>
+                  <div className="px-2  flex justify-center items-center">
+                    Community
+                  </div>
+                </Link>
+              </div>
+
+              <div className="flex py-4 justify-center px-5 items-center">
+                <button className="flex bg-gradient-green w-full hover:bg-white border border-[#1B6909] rounded-3xl py-2 px-2 text-white justify-center items-center">
+                  <h1 className="px-3">Join the Waitlist</h1>
+                </button>
+              </div>
             </div>
           )}
         </div>
@@ -94,13 +92,13 @@ const Nav = () => {
           <div className=" flex flex-row ">
             <Link to="/" className="flex ">
               <img src={logo} alt="logo" />
-              <div className="px-2 font-bold text-xl text-black flex justify-center items-center">
-                Cropcrypt
-              </div>
+              <div className="px-2 font-bold text-xl bg-gradient-to-r from-black to-[#359A35] text-transparent bg-clip-text flex justify-center items-center">
+  Cropcrypt
+</div>
             </Link>
           </div>
 
-          <div className="flex flex-row justify-center lg:gap-8">
+          <div className="flex flex-row justify-center md:gap-2 lg:gap-8">
             <Link
               to="/"
               className={`flex md:px-2 font-medium lg:px-2 ${isActive("/")}`}
@@ -127,8 +125,8 @@ const Nav = () => {
               </div>
             </Link>
 
-            <div className="flex justify-center items-center"> 
-              <button className="flex bg-gradient-green hover:bg-gray-100 border border-[#1B6909] rounded-2xl py-2 px-1 text-white justify-center items-center">
+            <div className="flex justify-center items-center">
+              <button className="flex bg-gradient-green hover:bg-white border border-[#1B6909] rounded-3xl py-2 px-2 text-white justify-center items-center">
                 <h1 className="px-3">Join the Waitlist</h1>
               </button>
             </div>

@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col justify-center ">
+    <div className="flex flex-col justify-center px-4">
       <Nav />
     </div>
   );
