@@ -1,0 +1,35 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+
+.bg-gradient-invest {
+  background: linear-gradient(270deg, #359A35 0%, #123412 100%);
+}
+
+.bg-gradient-chain {
+  background: linear-gradient(309.01deg, #359A35 2.87%, #5FAE5F 13.73%, #FFFFFF 36%, #FFFFFF 58.44%, #FFFFFF 79.94%);
+}
+
+.bg-gradient-green {
+  background: linear-gradient(90deg, #359A35 0%, #123412 48.02%, #133713 53%, #123612 75.07%);
+}
+
+.bg-footer-gradient {
+  background: linear-gradient(94.31deg, #000000 33.92%, #252525 41.83%, #1D1D1D 51.41%, #383838 67.5%, #359A35 99.59%);
+
+}
+
+.text-gradient-invest {
+  background: linear-gradient(270deg, #359A35 0%, #123412 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
