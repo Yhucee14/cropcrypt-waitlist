@@ -31,10 +31,10 @@ const Nav = () => {
     <div className="flex px-2 py-4 justify-between cursor-pointer">
       {isMobile ? (
         <div className="md:hidden shadow-md py-2 z-50 flex justify-between w-full items-center">
-          <div className=" flex flex-row ">
+          <div className="py-1 flex flex-row ">
             <Link to="/" className="flex ">
-              <img src={logo} alt="logo" className="w-full h-12" />
-              <div className="px-2 font-bold text-xl bg-gradient-to-r from-black to-[#359A35] text-transparent bg-clip-text flex justify-center items-center">
+              <img src={logo} alt="logo" className=" w-10 h-7" />
+              <div className="px-2 font-bold text-lg bg-gradient-to-r from-black to-[#359A35] text-transparent bg-clip-text flex justify-center items-center">
                 Cropcrypt
               </div>
             </Link>
@@ -91,10 +91,10 @@ const Nav = () => {
         <div className="flex flex-row justify-between w-screen">
           <div className=" flex flex-row ">
             <Link to="/" className="flex ">
-              <img src={logo} alt="logo" />
+              <img src={logo} alt="logo" className="w-14 h-11"/>
               <div className="px-2 font-bold text-xl bg-gradient-to-r from-black to-[#359A35] text-transparent bg-clip-text flex justify-center items-center">
-  Cropcrypt
-</div>
+                Cropcrypt
+              </div>
             </Link>
           </div>
 
