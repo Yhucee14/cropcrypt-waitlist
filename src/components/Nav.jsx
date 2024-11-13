@@ -28,7 +28,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex px-2 py-4 justify-between cursor-pointer">
+    <div className="flex px-4 sm:px-2 py-4 justify-between cursor-pointer">
       {isMobile ? (
         <div className="md:hidden shadow-md py-2 z-50 flex justify-between w-full items-center">
           <div className="py-1 flex flex-row ">
@@ -49,7 +49,7 @@ const Nav = () => {
           </button>
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="absolute top-20 left-0 w-full rounded-lg bg-white shadow-lg md:hidden z-10">
+            <div className="absolute top-20 left-0  w-full rounded-lg bg-white shadow-lg md:hidden z-10">
               <div className="py-2">
                 <Link
                   to="/"
