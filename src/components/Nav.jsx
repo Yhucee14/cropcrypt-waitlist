@@ -28,7 +28,7 @@ const Nav = () => {
   };
 
   return (
-    <div className="flex px-4 sm:px-2 py-4 justify-between cursor-pointer">
+    <div className="flex px-4 sm:px-0 py-4 justify-between cursor-pointer">
       {isMobile ? (
         <div className="md:hidden shadow-md py-2 z-50 flex justify-between w-full items-center">
           <div className="py-1 flex flex-row ">
@@ -79,11 +79,13 @@ const Nav = () => {
                 </Link>
               </div>
 
-              <div className="flex py-4 justify-center px-5 items-center">
-                <button className="flex bg-gradient-green w-full hover:bg-white border border-[#1B6909] rounded-3xl py-2 px-2 text-white justify-center items-center">
-                  <h1 className="px-3">Join the Waitlist</h1>
-                </button>
-              </div>
+              <Link to="/waitlist">
+                <div className="flex py-4 justify-center px-5 items-center">
+                  <button className="flex bg-gradient-green w-full hover:bg-white border border-[#1B6909] rounded-3xl py-2 px-2 text-white justify-center items-center">
+                    <h1 className="px-3">Join the Waitlist</h1>
+                  </button>
+                </div>
+              </Link>
             </div>
           )}
         </div>
@@ -91,7 +93,7 @@ const Nav = () => {
         <div className="flex flex-row justify-between w-screen">
           <div className=" flex flex-row ">
             <Link to="/" className="flex ">
-              <img src={logo} alt="logo" className="w-14 h-11"/>
+              <img src={logo} alt="logo" className="w-14 h-11" />
               <div className="px-2 font-bold text-xl bg-gradient-to-r from-black to-[#359A35] text-transparent bg-clip-text flex justify-center items-center">
                 Cropcrypt
               </div>
@@ -125,11 +127,13 @@ const Nav = () => {
               </div>
             </Link>
 
-            <div className="flex justify-center items-center">
-              <button className="flex bg-gradient-green hover:bg-white border border-[#1B6909] rounded-3xl py-2 px-2 text-white justify-center items-center">
-                <h1 className="px-3">Join the Waitlist</h1>
-              </button>
-            </div>
+            <Link to="/waitlist">
+              <div className="flex justify-center items-center">
+                <button className="flex bg-gradient-green w-full hover:bg-none hover:bg-white hover:text-[#1B6909] hover:border-[#1B6909] border border-[#1B6909] rounded-3xl py-1.5 sm:py-2 sm:px-2 text-white justify-center items-center transition-all duration-300 ease-in-out">
+                  <h1 className="px-3">Join the Waitlist</h1>
+                </button>
+              </div>
+            </Link>
           </div>
         </div>
       )}

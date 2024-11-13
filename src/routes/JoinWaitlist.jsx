@@ -1,9 +1,83 @@
-
+import Nav from "../components/Nav";
+import herobg from "../assets/herobg.png";
+import person from "../assets/person.png";
+import mail from "../assets/mail.png";
+import tick from "../assets/tick.png";
 
 const JoinWaitlist = () => {
   return (
-    <div>JoinWaitlist</div>
-  )
-}
+    <div className="px-2 ">
+      <Nav />
 
-export default JoinWaitlist
+      <div
+        className="flex flex-col h-full bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${herobg})` }}
+      >
+        <div className="flex justify-center font-bold text-4xl py-8">
+          Coming Soon
+        </div>
+
+        <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 lg:mt-[32px] py-3">
+          <div className="border w-[600px] rounded-3xl bg-[#D9D9D91A] flex flex-col py-5 justify-center items-center">
+            <div className="font-bold text-xl">Join our Waitlist</div>
+
+            <div className="py-4 flex xx:justify-start sm:justify-center sm:px-5 font-normal leading-6 xx:text-md sm:text-lg">
+              <p className="text-[#000000ad] flex xx:px-36 xx:leading-5 sm:leading-5 sm:px-0 justify-start sm:justify-center sm:text-center">
+                Be the first to contribute to sustainable agriculture on
+                Cropcrypt and also get insights about our launch.
+              </p>
+            </div>
+
+            <div className="py-3">
+              <form className="flex flex-col justify-between gap-4 w-[400px]">
+                <div className="relative w-[75%] flex flex-col gap-4 mx-auto">
+                  <div>
+                    <img
+                      src={person}
+                      alt="Person Icon"
+                      className="absolute left-6 top-[21%] transform -translate-y-1/2 w-5 h-5"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Full name"
+                      className="border-2 border-gray-400 bg-white focus:bg-[#72b87277] w-full rounded-xl h-12 text-sm pl-14 text-[#1A0F28] focus:outline-none"
+                    />
+                  </div>
+
+                  <div>
+                    <img
+                      src={mail}
+                      alt="mail Icon"
+                      className="absolute left-6 top-[53%] transform -translate-y-1/2 w-5 h-5"
+                    />
+                    <input
+                      type="text"
+                      placeholder="Email address"
+                      className="border-2 border-gray-400 bg-white focus:bg-[#72b87277] w-full rounded-xl h-12 text-sm pl-14 text-[#1A0F28] focus:outline-none"
+                    />
+                  </div>
+
+                  <div className="flex flex-col justify-center w-full">
+                    <button
+                      type="submit"
+                      className="flex w-full gap-2 h-10 bg-[#359A35] hover:bg-[white] hover:border-2 hover:border-gray-400 hover:text-[#359A35] rounded-xl py-2 px-4 text-white font-semibold justify-center items-center"
+                    >
+                      <img src={tick} className="w-5 h-5" />
+                      <div>Sign up</div>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-center sm:pt-20  lg:pt-20px font-normal text-sm text-black">
+        @2024-2025 Cropcrypt. All rights reserved.
+      </div>
+      </div>
+    </div>
+  );
+};
+
+export default JoinWaitlist;
