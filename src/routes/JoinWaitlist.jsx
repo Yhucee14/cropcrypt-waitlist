@@ -10,32 +10,32 @@ const JoinWaitlist = () => {
       <Nav />
 
       <div
-        className="flex flex-col h-full bg-cover bg-center bg-no-repeat"
+        className="flex flex-col justify-between h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${herobg})` }}
       >
-        <div className="flex justify-center font-bold text-4xl py-8">
+        <div className="flex justify-center font-bold text-3xl pt-12 sm:py-8">
           Coming Soon
         </div>
 
-        <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 lg:mt-[32px] py-3">
-          <div className="border w-[600px] rounded-3xl bg-[#D9D9D91A] flex flex-col py-5 justify-center items-center">
-            <div className="font-bold text-xl">Join our Waitlist</div>
+        <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
+          <div className="border-4 w-[360px] sm:w-[600px] rounded-3xl bg-[#D9D9D91A] flex flex-col py-5  sm:justify-center sm:items-center">
+            <div className="font-bold flex justify-center text-xl">Join our Waitlist</div>
 
             <div className="py-4 flex xx:justify-start sm:justify-center sm:px-5 font-normal leading-6 xx:text-md sm:text-lg">
-              <p className="text-[#000000ad] flex xx:px-36 xx:leading-5 sm:leading-5 sm:px-0 justify-start sm:justify-center sm:text-center">
+              <p className="text-[#000000ad] flex text-center xx:px-7 xx:leading-5 sm:leading-5 sm:px-0 justify-start sm:justify-center sm:text-center">
                 Be the first to contribute to sustainable agriculture on
                 Cropcrypt and also get insights about our launch.
               </p>
             </div>
 
-            <div className="py-3">
-              <form className="flex flex-col justify-between gap-4 w-[400px]">
-                <div className="relative w-[75%] flex flex-col gap-4 mx-auto">
+            <div className="py-3 border w-full">
+              <form className="flex flex-col justify-between gap-4  w-full">
+                <div className="relative w-full xx:px-4 sm:px-0 sm:w-[75%] flex flex-col gap-4 mx-auto">
                   <div>
                     <img
                       src={person}
                       alt="Person Icon"
-                      className="absolute left-6 top-[21%] transform -translate-y-1/2 w-5 h-5"
+                      className="absolute xx:left-10 xx:top-6 sm:left-6 sm:top-[21%] transform -translate-y-1/2 w-5 h-5"
                     />
                     <input
                       type="text"
@@ -48,7 +48,7 @@ const JoinWaitlist = () => {
                     <img
                       src={mail}
                       alt="mail Icon"
-                      className="absolute left-6 top-[53%] transform -translate-y-1/2 w-5 h-5"
+                      className="absolute xx:left-10 xx:top-[53%] sm:left-6 sm:top-[53%] transform -translate-y-1/2 w-5 h-5"
                     />
                     <input
                       type="text"
@@ -72,7 +72,7 @@ const JoinWaitlist = () => {
           </div>
         </div>
 
-        <div className="flex justify-center sm:pt-20  lg:pt-20px font-normal text-sm text-black">
+        <div className="flex justify-center xx:pt-24 sm:pt-20  lg:pt-20px font-normal text-sm text-black">
         @2024-2025 Cropcrypt. All rights reserved.
       </div>
       </div>
