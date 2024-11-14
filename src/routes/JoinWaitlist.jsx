@@ -9,7 +9,10 @@ import { useState } from "react";
 const JoinWaitlist = () => {
   const [showModal, setShowModal] = useState(false);
 
-  const handleShowModal = () => setShowModal(true);
+  const handleShowModal = (e) => {
+    e.preventDefault(); 
+    setShowModal(true);
+  };
 
   const handleCloseModal = () => setShowModal(false);
 
@@ -26,7 +29,7 @@ const JoinWaitlist = () => {
         </div>
 
         <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
-          <div className="border-2 w-[360px] sm:w-[600px] rounded-3xl bg-[#D9D9D91A] flex flex-col py-5  sm:justify-center sm:items-center">
+          <div className="border-2 w-[360px] backdrop-blur-lg sm:w-[600px] rounded-3xl bg-[#d9d9d92c] flex flex-col py-5  sm:justify-center sm:items-center">
             <div className="font-bold flex justify-center text-xl">
               Join our Waitlist
             </div>
@@ -39,7 +42,7 @@ const JoinWaitlist = () => {
             </div>
 
             <div className="py-3 w-full">
-              <form className="flex flex-col justify-between gap-4  w-full">
+              <form onSubmit={handleShowModal} className="flex flex-col justify-between gap-4  w-full">
                 <div className="relative w-full xx:px-4 sm:px-0 sm:w-[75%] flex flex-col gap-4 mx-auto">
                   <div>
                     <img
@@ -73,7 +76,7 @@ const JoinWaitlist = () => {
                       className="flex w-full gap-2 h-10 bg-[#359A35] hover:bg-[white] hover:border-2 hover:border-gray-400 hover:text-[#359A35] rounded-xl py-2 px-4 text-white font-semibold justify-center items-center"
                     >
                       <img src={tick} className="w-5 h-5" />
-                      <div onClick={handleShowModal}>Sign up</div>
+                      <div>Sign up</div>
                     </button>
                   </div>
                 </div>
@@ -81,6 +84,8 @@ const JoinWaitlist = () => {
             </div>
           </div>
         </div>
+
+        {showModal && <Modal onClose={handleCloseModal}></Modal>}
 
         <div className="flex justify-center xx:pt-24 sm:pt-20  lg:pt-20px font-normal text-sm text-black">
           @2024-2025 Cropcrypt. All rights reserved.
