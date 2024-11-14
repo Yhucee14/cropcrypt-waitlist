@@ -3,8 +3,16 @@ import herobg from "../assets/herobg.png";
 import person from "../assets/person.png";
 import mail from "../assets/mail.png";
 import tick from "../assets/tick.png";
+import Modal from "../components/Modal";
+import { useState } from "react";
 
 const JoinWaitlist = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShowModal = () => setShowModal(true);
+
+  const handleCloseModal = () => setShowModal(false);
+
   return (
     <div className="px-2 ">
       <Nav />
@@ -18,8 +26,10 @@ const JoinWaitlist = () => {
         </div>
 
         <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
-          <div className="border-4 w-[360px] sm:w-[600px] rounded-3xl bg-[#D9D9D91A] flex flex-col py-5  sm:justify-center sm:items-center">
-            <div className="font-bold flex justify-center text-xl">Join our Waitlist</div>
+          <div className="border-2 w-[360px] sm:w-[600px] rounded-3xl bg-[#D9D9D91A] flex flex-col py-5  sm:justify-center sm:items-center">
+            <div className="font-bold flex justify-center text-xl">
+              Join our Waitlist
+            </div>
 
             <div className="py-4 flex xx:justify-start sm:justify-center sm:px-5 font-normal leading-6 xx:text-md sm:text-lg">
               <p className="text-[#000000ad] flex text-center xx:px-7 xx:leading-5 sm:leading-5 sm:px-0 justify-start sm:justify-center sm:text-center">
@@ -28,14 +38,14 @@ const JoinWaitlist = () => {
               </p>
             </div>
 
-            <div className="py-3 border w-full">
+            <div className="py-3 w-full">
               <form className="flex flex-col justify-between gap-4  w-full">
                 <div className="relative w-full xx:px-4 sm:px-0 sm:w-[75%] flex flex-col gap-4 mx-auto">
                   <div>
                     <img
                       src={person}
                       alt="Person Icon"
-                      className="absolute xx:left-10 xx:top-6 sm:left-6 sm:top-[21%] transform -translate-y-1/2 w-5 h-5"
+                      className="absolute xx:left-10 xx:top-6 sm:left-6 sm:top-6 transform -translate-y-1/2 w-5 h-5"
                     />
                     <input
                       type="text"
@@ -63,7 +73,7 @@ const JoinWaitlist = () => {
                       className="flex w-full gap-2 h-10 bg-[#359A35] hover:bg-[white] hover:border-2 hover:border-gray-400 hover:text-[#359A35] rounded-xl py-2 px-4 text-white font-semibold justify-center items-center"
                     >
                       <img src={tick} className="w-5 h-5" />
-                      <div>Sign up</div>
+                      <div onClick={handleShowModal}>Sign up</div>
                     </button>
                   </div>
                 </div>
@@ -73,8 +83,8 @@ const JoinWaitlist = () => {
         </div>
 
         <div className="flex justify-center xx:pt-24 sm:pt-20  lg:pt-20px font-normal text-sm text-black">
-        @2024-2025 Cropcrypt. All rights reserved.
-      </div>
+          @2024-2025 Cropcrypt. All rights reserved.
+        </div>
       </div>
     </div>
   );
