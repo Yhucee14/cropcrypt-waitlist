@@ -33,7 +33,7 @@ const Modal = ({ onClose }) => {
 
           <div className="flex flex-col justify-center items-center py-5 ">
             <button
-              type="submit"
+              onClick={onClose}
               className="flex justify-center gap-2 w-[350px] h-12 bg-[#359A35] hover:bg-[white] hover:border-2 hover:border-gray-400 hover:text-[#359A35] rounded-xl py-2 px-4 text-white font-semibold  items-center"
             >
               <img src={tick} className="w-5 h-5 mt-0.5" />
