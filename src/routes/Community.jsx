@@ -4,6 +4,7 @@ import link from "../assets/link.png";
 import tweet from "../assets/tweet.png";
 import whatsapp from "../assets/whatsapp.png";
 import telegram from "../assets/telegram.png";
+import Footer from "../components/Footer";
 
 const Community = () => {
   return (
@@ -16,7 +17,7 @@ const Community = () => {
       >
         <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
           <div className="border w-[400px] xx:mt-12 sm:pt-0 backdrop-blur-lg sm:w-[600px] sm:mt-[10px] rounded-3xl bg-[#D9D9D94D] flex flex-col py-5 sm:px-10 sm:justify-center sm:items-center">
-            <div className="font-bold flex justify-center text-xl">
+            <div className="font-bold flex py-4 justify-center text-xl">
               Join our Community
             </div>
 
@@ -89,9 +90,7 @@ const Community = () => {
           </div>
         </div>
 
-        <div className="flex justify-center xx:mt-28 sm:mt-20  lg:mt-20px font-normal text-sm text-black">
-          @2024-2025 Cropcrypt. All rights reserved.
-        </div>
+    <Footer />
       </div>
     </div>
   );

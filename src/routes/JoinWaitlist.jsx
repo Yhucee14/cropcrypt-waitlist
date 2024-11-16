@@ -24,12 +24,12 @@ const JoinWaitlist = () => {
         className="flex flex-col justify-between h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${herobg})` }}
       >
-        <div className="flex justify-center font-bold text-3xl pt-12 sm:py-8">
+        <div className="flex  justify-center font-bold text-3xl pt-12 sm:py-8">
           Coming Soon
         </div>
 
-        <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
-          <div className="border-2 w-[360px] backdrop-blur-lg sm:w-[600px] rounded-3xl bg-[#d9d9d92c] flex flex-col py-5  sm:justify-center sm:items-center">
+        <div className="flex   justify-center xx:pb-16 sm:pb-16 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
+          <div className="border border-[#d9d9d99b] w-[360px]  sm:w-[600px] rounded-3xl bg-[#d9d9d92c] flex flex-col py-5  sm:justify-center sm:items-center">
             <div className="font-bold flex justify-center text-xl">
               Join our Waitlist
             </div>
@@ -86,8 +86,9 @@ const JoinWaitlist = () => {
         </div>
 
         {showModal && <Modal onClose={handleCloseModal}></Modal>}
+        <div className="p-20"></div>
 
-        <div className="flex justify-center xx:pt-24 sm:pt-20  lg:pt-20px font-normal text-sm text-black">
+        <div className="flex justify-center border sm:mt-[20px] lg:pt-20px font-normal text-sm text-black">
           @2024-2025 Cropcrypt. All rights reserved.
         </div>
       </div>

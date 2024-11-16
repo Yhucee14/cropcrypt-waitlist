@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import phone from "../assets/phone.png";
+import Footer from "./Footer";
 
 const Hero = () => {
   return (
@@ -37,14 +38,12 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="xx:pb-16 xx:pt-8 sm:pt-0 sm:pb-0 lg:pb-10">
+        <div className="border sm:pt-0 sm:pb-0 lg:pb-10">
           <img src={phone} alt="home" className=" z-20" />
         </div>
       </div>
 
-      <div className="flex justify-center xx:pt-24 sm:pt-20  lg:pt-20px font-normal text-sm text-black">
-        @2024-2025 Cropcrypt. All rights reserved.
-      </div>
+    <Footer />
     </div>
   );
 };
