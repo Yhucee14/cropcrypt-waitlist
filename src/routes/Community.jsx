@@ -15,7 +15,7 @@ const Community = () => {
         style={{ backgroundImage: `url(${herobg})` }}
       >
         <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
-          <div className="border w-[400px] backdrop-blur-lg sm:w-[600px] sm:mt-[10px] rounded-3xl bg-[#D9D9D94D] flex flex-col py-5 sm:px-10 sm:justify-center sm:items-center">
+          <div className="border w-[400px] xx:mt-12 sm:pt-0 backdrop-blur-lg sm:w-[600px] sm:mt-[10px] rounded-3xl bg-[#D9D9D94D] flex flex-col py-5 sm:px-10 sm:justify-center sm:items-center">
             <div className="font-bold flex justify-center text-xl">
               Join our Community
             </div>
@@ -27,7 +27,7 @@ const Community = () => {
               </p>
             </div>
 
-            <div className="py-5 flex flex-col justify-center">
+            <div className="py-5 flex xx:pt-8 sm:pt-0 xx:pb-16 sm:pb-0 flex-col justify-center">
               <a href="https://www.x.com" target="_blank" className="flex justify-center">
                 <div className="flex flex-col justify-center py-1 w-[350px]">
                   <button
@@ -89,7 +89,7 @@ const Community = () => {
           </div>
         </div>
 
-        <div className="flex justify-center xx:pt-24 sm:pt-20  lg:pt-20px font-normal text-sm text-black">
+        <div className="flex justify-center xx:mt-28 sm:mt-20  lg:mt-20px font-normal text-sm text-black">
           @2024-2025 Cropcrypt. All rights reserved.
         </div>
       </div>
