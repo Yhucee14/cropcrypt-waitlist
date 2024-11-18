@@ -4,7 +4,7 @@ import herobg from "../assets/herobg.png";
 
 const Layout = () => {
   return (
-    <div className="flex flex-col justify-center sm:px-1">
+    <div className="flex flex-col overflow-x-hidden w-screen justify-center sm:px-1">
       <Nav />
 
       <div
