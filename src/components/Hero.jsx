@@ -4,10 +4,10 @@ import Footer from "./Footer";
 
 const Hero = () => {
   return (
-    <div>
-      <div className="flex xx:py-4  xx:px-14 sm:px-0 sm:py-2 xx:flex-col sm:flex-col justify-between items-center">
+    <div className="flex flex-col justify-between xx:gap-[110px] xs:gap-[200px] ss:gap-[130px] md:gap-[2px] lg:gap-25px]">
+      <div className="flex xx:py-4   xx:px-14 sm:px-0 sm:py-2 xx:flex-col sm:flex-col justify-between items-center">
         <div className="flex px-4 flex-col">
-          <div className="font-bold flex flex-col xx:px-2 sm:px-0 justify-start xx:leading-10 sm:leading-10 sm:py-3 text-2xl sm:text-3xl  text-[#0F2816]">
+        <div className="font-bold flex flex-col xx:px-2 sm:px-0 justify-start xx:leading-10 sm:leading-10 sm:py-3 text-2xl sm:text-3xl  text-[#0F2816]">
             <p className="flex justify-start px-36 sm:px-0  sm:justify-center ">Empowering Sustainable</p>
             <p className="flex justify-start xx:leading-9 sm:leading-0 xx:px-36  sm:px-0">
               
@@ -38,6 +38,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
         <div className=" xx:mt-[60px] sm:mt-[10px] lg:mt-[30px] lg:pb-[35px]">
           <img src={phone} alt="home" className=" z-20" />
         </div>
