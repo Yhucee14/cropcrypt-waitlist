@@ -12,11 +12,11 @@ const Nav = () => {
 
   const location = useLocation();
   const isActive = (path) =>
-    location.pathname === path ? "text-green-600" : "text-[#736D6D]";
+    location.pathname === path ? "text-green-600" : "text-black";
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 1023);
     };
 
     window.addEventListener("resize", handleResize);
@@ -67,7 +67,7 @@ const Nav = () => {
                 <Link
                   to="/community"
                   className={`flex px-5 border-b-gray-300 border-b-2 py-3 md:px-2 font-medium lg:px-2 ${isActive(
-                    "/"
+                    "/community"
                   )}`}
                 >
                   <div className="flex justify-center items-center">
