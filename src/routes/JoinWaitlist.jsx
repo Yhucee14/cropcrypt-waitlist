@@ -22,10 +22,10 @@ const JoinWaitlist = () => {
       <Nav />
 
       <div
-        className="flex flex-col justify-between xx:gap-[175px] xs:gap-[270px] md:gap-[175px] lg:gap-[220px] h-full bg-cover bg-center bg-no-repeat"
+        className="flex flex-col justify-between xx:gap-[105px] xs:gap-[200px] md:gap-[105px] lg:gap-[0px] h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${herobg})` }}
       >
-        <div className="flex flex-col justify-between gap-[20px]">
+        <div className="flex flex-col justify-between gap-[10px]">
         <div className="flex  justify-center font-bold text-3xl pt-16 sm:py-8">
           Coming Soon
         </div>

@@ -12,11 +12,11 @@ const Community = () => {
       <Nav />
 
       <div
-        className="flex flex-col justify-between xx:gap-[115px] xs:gap-[200px] md:gap-[245px] lg:gap-[280px] h-full bg-cover bg-center bg-no-repeat"
+        className="flex flex-col justify-between xx:gap-[40px] xs:gap-[120px] md:gap-[145px] lg:gap-[0px] h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${herobg})` }}
       >
         <div className="flex justify-center py-5">
-          <div className="border w-[400px] xx:mt-12 sm:pt-0 backdrop-blur-lg sm:w-[600px] sm:mt-[10px] rounded-3xl bg-[#D9D9D94D] flex flex-col py-8 sm:px-10 sm:justify-center sm:items-center">
+          <div className="border w-[400px] xx:mt-4 sm:pt-0 backdrop-blur-lg sm:w-[600px] sm:mt-[10px] rounded-3xl bg-[#D9D9D94D] flex flex-col py-8 sm:px-10 sm:justify-center sm:items-center">
             <div className="font-bold flex py-4 justify-center text-xl">
               Join our Community
             </div>
