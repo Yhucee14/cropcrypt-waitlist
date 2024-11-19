@@ -12,11 +12,11 @@ const Community = () => {
       <Nav />
 
       <div
-        className="flex flex-col justify-between h-full bg-cover bg-center bg-no-repeat"
+        className="flex flex-col justify-between xx:gap-[115px] xs:gap-[200px] md:gap-[245px] lg:gap-[280px] h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${herobg})` }}
       >
-        <div className="flex justify-center xx:pb-16 sm:pb-32 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
-          <div className="border w-[400px] xx:mt-12 sm:pt-0 backdrop-blur-lg sm:w-[600px] sm:mt-[10px] rounded-3xl bg-[#D9D9D94D] flex flex-col py-5 sm:px-10 sm:justify-center sm:items-center">
+        <div className="flex justify-center py-5">
+          <div className="border w-[400px] xx:mt-12 sm:pt-0 backdrop-blur-lg sm:w-[600px] sm:mt-[10px] rounded-3xl bg-[#D9D9D94D] flex flex-col py-8 sm:px-10 sm:justify-center sm:items-center">
             <div className="font-bold flex py-4 justify-center text-xl">
               Join our Community
             </div>
@@ -29,7 +29,11 @@ const Community = () => {
             </div>
 
             <div className="py-5 flex xx:pt-8 sm:pt-0 xx:pb-16 sm:pb-0 flex-col justify-center">
-              <a href="https://www.x.com" target="_blank" className="flex justify-center">
+              <a
+                href="https://www.x.com"
+                target="_blank"
+                className="flex justify-center"
+              >
                 <div className="flex flex-col justify-center py-1 w-[350px]">
                   <button
                     type="submit"
@@ -49,7 +53,11 @@ const Community = () => {
                 </div>
               </a>
 
-              <a href="https://www.Telegram.com" className="flex justify-center" target="_blank">
+              <a
+                href="https://www.Telegram.com"
+                className="flex justify-center"
+                target="_blank"
+              >
                 {" "}
                 <div className="flex flex-col justify-center py-3 w-[350px]">
                   <button
@@ -68,7 +76,11 @@ const Community = () => {
                 </div>
               </a>
 
-              <a href="https://www.Whatsapp.com" className="flex justify-center" target="_blank">
+              <a
+                href="https://www.Whatsapp.com"
+                className="flex justify-center"
+                target="_blank"
+              >
                 {" "}
                 <div className="flex flex-col justify-center py-1 w-[350px]">
                   <button
@@ -90,7 +102,7 @@ const Community = () => {
           </div>
         </div>
 
-    <Footer />
+        <Footer />
       </div>
     </div>
   );

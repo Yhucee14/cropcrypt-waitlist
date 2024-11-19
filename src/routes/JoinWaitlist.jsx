@@ -5,6 +5,7 @@ import mail from "../assets/mail.png";
 import tick from "../assets/tick.png";
 import Modal from "../components/Modal";
 import { useState } from "react";
+import Footer from "../components/Footer";
 
 const JoinWaitlist = () => {
   const [showModal, setShowModal] = useState(false);
@@ -21,14 +22,15 @@ const JoinWaitlist = () => {
       <Nav />
 
       <div
-        className="flex flex-col justify-between h-full bg-cover bg-center bg-no-repeat"
+        className="flex flex-col justify-between xx:gap-[175px] xs:gap-[270px] md:gap-[175px] lg:gap-[220px] h-full bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${herobg})` }}
       >
-        <div className="flex  justify-center font-bold text-3xl pt-12 sm:py-8">
+        <div className="flex flex-col justify-between gap-[20px]">
+        <div className="flex  justify-center font-bold text-3xl pt-16 sm:py-8">
           Coming Soon
         </div>
 
-        <div className="flex   justify-center xx:pb-16 sm:pb-16 lg:pb-40 xx:mt-[20px] sm:mt-0 lg:mt-[32px] py-3">
+        <div className="flex   justify-center py-3">
           <div className="border border-[#d9d9d99b] w-[360px]  sm:w-[600px] rounded-3xl bg-[#d9d9d92c] flex flex-col py-5  sm:justify-center sm:items-center">
             <div className="font-bold flex justify-center text-xl">
               Join our Waitlist
@@ -84,13 +86,12 @@ const JoinWaitlist = () => {
             </div>
           </div>
         </div>
+        </div>
+
 
         {showModal && <Modal onClose={handleCloseModal}></Modal>}
-        <div className="p-20"></div>
 
-        <div className="flex justify-center border sm:mt-[20px] lg:pt-20px font-normal text-sm text-black">
-          @2024-2025 Cropcrypt. All rights reserved.
-        </div>
+       <Footer />
       </div>
     </div>
   );
