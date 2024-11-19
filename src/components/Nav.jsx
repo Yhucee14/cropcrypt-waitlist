@@ -5,6 +5,7 @@ import menu from "../assets/menu.png";
 import close from "../assets/close.png";
 import people from "../assets/people.png";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1023);
@@ -26,6 +27,26 @@ const Nav = () => {
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const menuVariants = {
+    open: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+    closed: {
+      opacity: 0,
+      y: -20,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+  };
+
 
   return (
     <div className="flex px-0 sm:px-0 py-4 justify-between cursor-pointer">
@@ -49,7 +70,10 @@ const Nav = () => {
           </button>
           {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="absolute top-20 left-0  w-full rounded-lg bg-white shadow-lg md:hidden z-10">
+            <motion.div className="absolute top-20 left-0  w-full rounded-lg bg-white shadow-lg md:hidden z-10"
+            initial="closed"
+            animate={isMobileMenuOpen ? "open" : "closed"}
+            variants={menuVariants} >
               <div className="py-2">
                 <Link
                   to="/"
@@ -86,7 +110,7 @@ const Nav = () => {
                   </button>
                 </div>
               </Link>
-            </div>
+            </motion.div>
           )}
         </div>
       ) : (

@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col justify-between xx:gap-[70px] xs:gap-[160px] ss:gap-[130px] md:gap-[2px] lg:gap-25px]">
+    <div className="flex flex-col justify-between xx:gap-[60px] xs:gap-[160px] ss:gap-[130px] md:gap-[2px] lg:gap-25px]">
       <div className="flex py-4 px-4 sm:px-0 flex-col justify-center ss:items-center">
         <div className="flex flex-col justify-center ss:items-center ">
           <div className="font-bold px-2 sm:px-0 leading-8 sm:leading-10 sm:py-3 ss:text-center text-2xl sm:text-3xl text-[#0F2816] max-w-full">
@@ -17,7 +17,7 @@ const Hero = () => {
               and also get insights about our launch.
             </p>
           </div>
-          <div className="flex py-2 gap-2 border">
+          <div className="flex py-2 gap-2">
             <div>
               <Link to="/waitlist">
                 <button className="bg-gradient-green hover:bg-none hover:bg-white hover:text-[#1B6909] hover:border-[#1B6909] border border-[#1B6909] rounded-3xl py-2 px-4 text-white transition-all duration-300">
