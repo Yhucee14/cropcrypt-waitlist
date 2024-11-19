@@ -34,7 +34,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="xx:mt-[40px] sm:mt-[0px] md:mt-[0px] lg:mt-[10px] lg:pb-[25px]">
+        <div className="xx:mt-[20px] sm:mt-[0px] md:mt-[0px] lg:mt-[10px] lg:pb-[25px]">
           <img src={phone} alt="home" className="z-20 w-[500px]" />
         </div>
       </div>
