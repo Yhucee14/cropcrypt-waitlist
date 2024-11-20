@@ -79,7 +79,7 @@ const Nav = () => {
                 <Link
                   to="/"
                   className={`flex items-center border-b-gray-300 border-b-2 px-5 md:px-2 py-3 font-medium lg:px-2 ${
-                    isActive("/") ? "text-green-600" : "text-black"
+                    isActive("/") ? "text-green-600" : "text-[#736D6D]"
                   }`}
                 >
                   <div className="flex justify-center items-center">
@@ -98,7 +98,7 @@ const Nav = () => {
                 <Link
                   to="/community"
                   className={`flex items-center px-5 border-b-gray-300 border-b-2 py-3 md:px-2 font-medium lg:px-2 ${
-                    isActive("/community") ? "text-green-600" : "text-black"
+                    isActive("/community") ? "text-green-600" : "text-[#736D6D]"
                   }`}
                 >
                   <div className="flex justify-center items-center">
@@ -141,7 +141,7 @@ const Nav = () => {
             <Link
               to="/"
               className={`flex items-center md:px-2 font-medium lg:px-2 ${
-                isActive("/") ? "text-green-600" : "text-black"
+                isActive("/") ? "text-green-600" : "text-[#736D6D]"
               }`}
             >
               <div className="flex justify-center items-center">
@@ -159,7 +159,7 @@ const Nav = () => {
             <Link
               to="/community"
               className={`flex items-center md:px-1 font-medium lg:px-2 ${
-                isActive("/community") ? "text-green-600" : "text-black"
+                isActive("/community") ? "text-green-600" : "text-[#736D6D]"
               }`}
             >
               <div className="flex justify-center items-center">
